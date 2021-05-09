@@ -1,19 +1,26 @@
-import { extendTheme,
-    withDefaultColorScheme,
-    theme as baseTheme, } from "@chakra-ui/react";
+import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
+
+export const breakpoints = createBreakpoints({
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+});
 
 export const theme = extendTheme(
   {
+    breakpoints,
     fontSizes: {
-        lg: "18px",
+      lg: "18px",
     },
     colors: {
-        white: {
+      white: {
         full: "#ffffff",
-        },
-        blue: {
+      },
+      blue: {
         light: "#b7d7ea",
-        },
+      },
     },
   },
   withDefaultColorScheme({ colorScheme: "brand" }),
