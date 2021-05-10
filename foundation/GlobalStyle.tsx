@@ -7,7 +7,7 @@ const routesText = encodeURIComponent(
 );
 
 const routingMenuFont = css`
-  @import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho%20B:wght@400;6001&display=swap&text=${routesText}");
+  @import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho%20B1:wght@400;600&display=swap&text=${routesText}");
 `;
 
 export const GlobalStyle: React.VFC = () => {
