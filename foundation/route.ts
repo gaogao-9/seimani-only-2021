@@ -8,6 +8,7 @@ export const routes: Array<Route> = [
     title: "トップページ",
     pathname: "/top",
   },
+  /*
   {
     title: "会場情報",
     pathname: "/map",
@@ -32,6 +33,7 @@ export const routes: Array<Route> = [
     title: "感染症対策",
     pathname: "/map",
   },
+  */
   {
     title: "スタッフ一覧",
     pathname: "/staff",
