@@ -60,8 +60,8 @@ export const RoutingMenu: React.VFC = () => {
               <Center my={4}>
                 <Link href={route.pathname} passHref>
                   <StyledLink
-                    aria-disabled={isSamePathname ? true : undefined}
-                    tabIndex={isSamePathname ? -1 : undefined}
+                    aria-disabled={isSamePathname}
+                    tabIndex={isSamePathname ? -1 : 0}
                   >
                     {route.title}
                   </StyledLink>

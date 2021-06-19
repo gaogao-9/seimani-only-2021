@@ -21,6 +21,9 @@ export const theme = extendTheme(
       blue: {
         light: "#b7d7ea",
       },
+      black: {
+        full: "#000000",
+      },
     },
   },
   withDefaultColorScheme({ colorScheme: "brand" }),

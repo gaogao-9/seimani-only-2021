@@ -11,13 +11,15 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Transition>
-        <ChakraProvider theme={theme}>
-          <CSSReset />
-          <GlobalStyle />
-          <Component {...pageProps} key={router.pathname} />
-        </ChakraProvider>
-      </Transition>
+      <ChakraProvider theme={theme}>
+        <Transition>
+          <>
+            <CSSReset key={`${router.pathname}-css-reset`} />
+            <GlobalStyle key={`${router.pathname}-global-style`} />
+            <Component {...pageProps} key={router.pathname} />
+          </>
+        </Transition>
+      </ChakraProvider>
     </>
   );
 };

@@ -6,7 +6,7 @@
   "author": "gaogao-9 <gaotuki@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 2021",
     "build": "next build",
     "static": "next export",
     "generate": "yarn build && yarn static",
