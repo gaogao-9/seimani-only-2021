@@ -34,6 +34,6 @@ export const routes: Array<Route> = [
   },
   {
     title: "スタッフ一覧",
-    pathname: "/map",
+    pathname: "/staff",
   },
 ];
