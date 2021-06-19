@@ -20,6 +20,7 @@ interface GridItemProps {
 const GridItem = styled.div<GridItemProps>`
   grid-area: ${({ gridArea }) => gridArea};
   ${({ overflow }) => overflow && `overflow: ${overflow};`};
+  overflow-x: hidden;
 `;
 
 const ContentsWrapper = styled.div`
@@ -28,7 +29,6 @@ const ContentsWrapper = styled.div`
     "contents" 1fr
     "footer" auto / 1fr;
   height: 100%;
-  overflow-y: auto;
 `;
 
 export interface BaseLayoutProps {
@@ -46,7 +46,9 @@ export const BaseLayout: React.VFC<BaseLayoutProps> = ({
       <Wrapper {...props}>
         <GridItem gridArea="contents" overflow="hidden">
           <ContentsWrapper>
-            <GridItem gridArea="contents">{children}</GridItem>
+            <GridItem gridArea="contents" overflow="auto">
+              {children}
+            </GridItem>
             <GridItem
               gridArea="footer"
               style={{ zIndex: 1, boxShadow: "0px -5px 20px 12px white" }}

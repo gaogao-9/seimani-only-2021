@@ -44,7 +44,7 @@ const Page: React.VFC = () => {
 
   return (
     <Layout>
-      <AspectRatio ref={ref} mx="auto" height="100%" ratio={aspectRatio}>
+      <AspectRatio ref={ref} mx="auto" minHeight="100%" ratio={aspectRatio}>
         <>
           <Image
             opacity={isImageLoaded ? 1 : 0}
