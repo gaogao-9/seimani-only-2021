@@ -20,11 +20,11 @@ export const routes: Array<Route> = [
     title: "サークル参加",
     pathname: "/circle",
   },
-  /*
   {
     title: "コスプレ参加",
-    pathname: "/map",
+    pathname: "/cosplay",
   },
+  /*
   {
     title: "サークル一覧",
     pathname: "/map",

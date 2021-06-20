@@ -71,9 +71,6 @@ const Page: React.VFC = () => {
             緊急交流イベント「漕ぎ出せ！ソクバイ海Ⅳ」
             <br />
             川崎市産業振興会館
-            <br />
-            <br />
-            <br />
           </Card.Section>
           <Card.Section title="イベントスケジュール">
             <Table>
