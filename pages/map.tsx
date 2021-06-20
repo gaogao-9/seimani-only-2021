@@ -1,14 +1,9 @@
-import React from "react";
+import React, { Children } from "react";
 import {
-  Avatar,
-  Box,
-  Center,
-  Text,
   Flex,
   List,
   ListIcon,
   ListItem,
-  SimpleGrid,
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
@@ -16,6 +11,7 @@ import { FaTrain, FaCompass, FaClock } from "react-icons/fa";
 import styled from "@emotion/styled";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { Card } from "~/components/Card";
+import { AnchorLink } from "~/components/AnchorLink";
 
 const StyledIframe = styled.iframe`
   width: 100%;
@@ -71,15 +67,13 @@ const Page: React.VFC = () => {
                 </ListItem>
                 <ListItem>
                   公式サイトによる案内は
-                  <a
+                  <AnchorLink
                     href="https://www.kawasaki-net.ne.jp/access.html"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Text textDecoration="underline" color="blue.500" as="span">
-                      こちら
-                    </Text>
-                  </a>
+                    こちら
+                  </AnchorLink>
                 </ListItem>
               </List>
             </WrapItem>

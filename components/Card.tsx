@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "@emotion/styled";
 import { Box, Text } from "@chakra-ui/react";
 
 export interface Card extends React.VFC<CardProps> {
