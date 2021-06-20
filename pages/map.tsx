@@ -33,7 +33,13 @@ const Map: React.VFC = () => {
 const Page: React.VFC = () => {
   return (
     <Layout>
-      <Flex maxW="1000px" marginX="auto" align="center" justify="center">
+      <Flex
+        maxW="1000px"
+        marginX="auto"
+        flexDirection="column"
+        align="center"
+        justify="center"
+      >
         <Card title="会場情報">
           <Wrap spacing={2} justify="center" align="center">
             <WrapItem
@@ -67,11 +73,7 @@ const Page: React.VFC = () => {
                 </ListItem>
                 <ListItem>
                   公式サイトによる案内は
-                  <AnchorLink
-                    href="https://www.kawasaki-net.ne.jp/access.html"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <AnchorLink href="https://www.kawasaki-net.ne.jp/access.html">
                     こちら
                   </AnchorLink>
                 </ListItem>

@@ -46,11 +46,11 @@ export const Card: Card = ({ title, children, ...props }) => {
         </Text>
       </Box>
       <Text
+        as="div"
         fontSize="lg"
         fontFamily={`"Noto Sans JP", sans-serif`}
         fontWeight="100"
         color="gray.700"
-        as="div"
       >
         {children}
       </Text>
@@ -73,6 +73,7 @@ const CardSection: React.VFC<CardProps> = ({ title, children, ...props }) => {
       </Box>
       <Box marginX={4}>
         <Text
+          as="div"
           fontSize="lg"
           fontFamily={`"Noto Sans JP", sans-serif`}
           fontWeight="100"

@@ -50,6 +50,7 @@ const Page: React.VFC = () => {
         height="100%"
         minH="calc(100vh - 60px)"
         marginX="auto"
+        flexDirection="column"
         align="center"
         justify="center"
       >
