@@ -16,11 +16,16 @@ const topAnimationFont = css`
   @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400&display=swap&text=${topAnimationText}");
 `;
 
+const BodyTextFont = css`
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap");
+`;
+
 export const GlobalStyle: React.VFC = () => {
   return (
     <>
       <Global styles={routingMenuFont} />
       <Global styles={topAnimationFont} />
+      <Global styles={BodyTextFont} />
     </>
   );
 };

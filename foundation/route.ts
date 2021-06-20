@@ -8,15 +8,15 @@ export const routes: Array<Route> = [
     title: "トップページ",
     pathname: "/top",
   },
-  /*
   {
     title: "会場情報",
     pathname: "/map",
   },
   {
     title: "参加者全般",
-    pathname: "/map",
+    pathname: "/common",
   },
+  /*
   {
     title: "サークル参加",
     pathname: "/map",

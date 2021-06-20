@@ -46,8 +46,9 @@ const Page: React.VFC = () => {
   return (
     <Layout>
       <Flex
-        height="100%"
         maxW="1000px"
+        height="100%"
+        minH="calc(100vh - 60px)"
         marginX="auto"
         align="center"
         justify="center"

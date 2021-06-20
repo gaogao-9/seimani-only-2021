@@ -3,7 +3,8 @@ import styled from "@emotion/styled";
 import { BaseLayout } from "./BaseLayout";
 
 const SkyBackground = styled.div`
-  height: 100%;
+  min-height: 100%;
+  background-attachment: fixed;
   background-image: linear-gradient(
     0deg,
     rgb(255, 255, 255) 25%,
