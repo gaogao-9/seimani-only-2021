@@ -1,17 +1,5 @@
 import React, { useCallback, useState } from "react";
-import {
-  Avatar,
-  Button,
-  Center,
-  Checkbox,
-  Flex,
-  SimpleGrid,
-  Table,
-  Tbody,
-  Td,
-  Tr,
-} from "@chakra-ui/react";
-import styled from "@emotion/styled";
+import { Button, Checkbox, Flex, Table, Tbody, Td, Tr } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
@@ -66,7 +54,6 @@ const Page: React.VFC = () => {
             <AnchorLink to="/online_event">
               https://festia.moe/online_event
             </AnchorLink>
-            <br />
           </Card.Section>
           <Card.Section title="イベントスケジュール">
             <Table>

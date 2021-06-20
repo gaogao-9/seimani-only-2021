@@ -17,7 +17,7 @@ const topAnimationFont = css`
 `;
 
 const BodyTextFont = css`
-  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&display=swap");
 `;
 
 export const GlobalStyle: React.VFC = () => {
