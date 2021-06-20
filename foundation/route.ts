@@ -29,11 +29,11 @@ export const routes: Array<Route> = [
     title: "サークル一覧",
     pathname: "/map",
   },
+  */
   {
     title: "感染症対策",
-    pathname: "/map",
+    pathname: "/infection",
   },
-  */
   {
     title: "スタッフ一覧",
     pathname: "/staff",

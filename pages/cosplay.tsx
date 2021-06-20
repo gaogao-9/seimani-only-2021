@@ -1,16 +1,6 @@
 import React, { useCallback, useState } from "react";
-import {
-  Text,
-  Button,
-  Checkbox,
-  Flex,
-  Table,
-  Tbody,
-  Td,
-  Tr,
-} from "@chakra-ui/react";
+import { Text, Button, Checkbox, Flex } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
-import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
 
 const Page: React.VFC = () => {
