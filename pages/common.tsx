@@ -1,21 +1,10 @@
-import React, { useCallback, useState } from "react";
-import { Button, Checkbox, Flex, Table, Tbody, Td, Tr } from "@chakra-ui/react";
+import React from "react";
+import { Flex, Table, Tbody, Td, Tr } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
 
 const Page: React.VFC = () => {
-  const [isChecked, setIsChecked] = useState(false);
-  const onCheckChange = useCallback(
-    (eve: React.ChangeEvent<HTMLInputElement>) => {
-      setIsChecked(eve.target.checked);
-    },
-    [setIsChecked],
-  );
-  const onButtonClick = useCallback(() => {
-    alert("準備中");
-  }, []);
-
   return (
     <Layout>
       <Flex
@@ -204,26 +193,6 @@ const Page: React.VFC = () => {
           </Card.Section>
           <Card.Section title="8. お問い合わせ窓口">
             戦挙管理委員会&nbsp;seimani.only[at]gmail.com
-          </Card.Section>
-        </Card>
-        <Card title="参加者事前登録フォーム">
-          <Card.Section title="">
-            <Checkbox
-              colorScheme="blue"
-              isChecked={isChecked}
-              onChange={onCheckChange}
-            >
-              以上の内容を熟読しました。
-            </Checkbox>
-            <br />
-            <br />
-            <Button
-              colorScheme="blue"
-              disabled={!isChecked}
-              onClick={onButtonClick}
-            >
-              参加者事前登録を行う
-            </Button>
           </Card.Section>
         </Card>
       </Flex>
