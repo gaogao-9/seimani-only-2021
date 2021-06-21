@@ -16,20 +16,13 @@ const Page: React.VFC = () => {
       >
         <Card title="感染症対策ページ">
           <Card.Section title="はじめに">
-            本イベントでは、会場の所在地である東京都が公表する『東京都感染拡大防止ガイドライン』に則り、感染症の拡大防止に努めるものとします。
+            本イベントでは、会場の所在地である神奈川県が公表する『感染拡大防止対策』に則り、感染症の拡大防止に努めるものとします。
             <br />
             <br />
-            東京都感染拡大防止ガイドブック イベント編 (PDF)
+            新型コロナウイルス感染症の拡大を防止するため行っていただきたい取組（チェックリスト）＜集会場、展示施設等＞&nbsp;(PDF)
             <br />
-            <AnchorLink href="https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/008/459/0625-27.pdf">
-              https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/008/459/0625-27.pdf
-            </AnchorLink>
-            <br />
-            <br />
-            東京都感染拡大防止チェックシート イベント編 (PDF)
-            <br />
-            <AnchorLink href="https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/008/429/24.pdf">
-              https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/008/429/24.pdf
+            <AnchorLink href="https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/008/">
+              https://www.bousai.metro.tokyo.lg.jp/_res/projects/default_project/_page_/001/008/
             </AnchorLink>
             <br />
             <br />
@@ -43,7 +36,7 @@ const Page: React.VFC = () => {
             </AnchorLink>
             のインストールを推奨します。
             <br />
-            ・来場前に連絡先などの情報登録をお願いする予定です。万が一の場合、主催から保健所など公的機関に提供するために使用しますので、ご協力をお願いいたします。
+            ・来場前に連絡先などの情報登録をお願いする可能性があります。万が一の場合、主催から保健所など公的機関に提供するために使用しますので、ご協力をお願いいたします。
           </Card.Section>
           <Card.Section title="来場後">
             ・入場時の検温にご協力ください。
@@ -69,8 +62,6 @@ const Page: React.VFC = () => {
             <br />
             ・手指消毒剤を各サークルごとにご用意いただくことを推奨いたします。
             <br />
-            ・飛沫防止シートの導入を推奨します。飛沫防止シートの導入が難しい場合、主催まで一度ご相談ください。
-            <br />
             ・キャッシュレス決済、個人間送金アプリなどの導入を推奨します。本名ではなくニックネームでの決済・送金が可能なアプリもありますので、ご検討ください。
             <br />
             ・各サークル様ごとの決済手段の事前告知が必要な場合、主催は参加者に向けて告知が行き渡るように協力いたします。
@@ -81,8 +72,6 @@ const Page: React.VFC = () => {
             ・今回のコスプレ参加は、混雑を避けるために事前登録制です。
             <br />
             ・受付期間内であっても上限人数に達し次第、事前登録は終了いたします。
-            <br />
-            コスプレ諸注意は コスプレ参加者向けのページ に掲載しております。
             <br />
             ・更衣室の入室人数を制限いたします。そのため、順番でお待ちいただく場合があります。
             <br />
