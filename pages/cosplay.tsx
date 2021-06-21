@@ -1,7 +1,14 @@
 import React, { useCallback, useState } from "react";
+import styled from "@emotion/styled";
 import { Text, Button, Checkbox, Flex } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { Card } from "~/components/Card";
+
+const StyledLink = styled.a`
+  &[aria-disabled] {
+    pointer-events: none;
+  }
+`;
 
 const Page: React.VFC = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -11,9 +18,6 @@ const Page: React.VFC = () => {
     },
     [setIsChecked],
   );
-  const onButtonClick = useCallback(() => {
-    alert("準備中");
-  }, []);
 
   return (
     <Layout>
@@ -152,13 +156,17 @@ const Page: React.VFC = () => {
             </Checkbox>
             <br />
             <br />
-            <Button
-              colorScheme="blue"
-              disabled={!isChecked}
-              onClick={onButtonClick}
+            <StyledLink
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdk2Uw2tW1rdMuKSn9No6DFGbqRpr0uLATVNoSh-VKdllCymQ/viewform"
+              target="_blank"
+              rel="noreferrer"
+              aria-disabled={!isChecked || (undefined as unknown as boolean)}
+              tabIndex={!isChecked ? -1 : 0}
             >
-              コスプレ事前登録する
-            </Button>
+              <Button as="span" colorScheme="blue" disabled={!isChecked}>
+                コスプレ事前登録する
+              </Button>
+            </StyledLink>
           </Card.Section>
         </Card>
       </Flex>

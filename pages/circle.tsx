@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from "react";
+import styled from "@emotion/styled";
 import {
   Text,
   Button,
@@ -13,6 +14,12 @@ import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
 
+const StyledLink = styled.a`
+  &[aria-disabled] {
+    pointer-events: none;
+  }
+`;
+
 const Page: React.VFC = () => {
   const [isChecked, setIsChecked] = useState(false);
   const onCheckChange = useCallback(
@@ -21,9 +28,6 @@ const Page: React.VFC = () => {
     },
     [setIsChecked],
   );
-  const onButtonClick = useCallback(() => {
-    alert("準備中");
-  }, []);
 
   return (
     <Layout>
@@ -264,13 +268,17 @@ const Page: React.VFC = () => {
             </Checkbox>
             <br />
             <br />
-            <Button
-              colorScheme="blue"
-              disabled={!isChecked}
-              onClick={onButtonClick}
+            <StyledLink
+              href="https://docs.google.com/forms/d/e/1FAIpQLScp7mOrnx_y54Xru4CkTlqghvgFhxBpwmSgu1wOYTwbYhwQkw/viewform"
+              target="_blank"
+              rel="noreferrer"
+              aria-disabled={!isChecked || (undefined as unknown as boolean)}
+              tabIndex={!isChecked ? -1 : 0}
             >
-              サークル参加する
-            </Button>
+              <Button as="span" colorScheme="blue" disabled={!isChecked}>
+                サークル参加する
+              </Button>
+            </StyledLink>
           </Card.Section>
         </Card>
       </Flex>

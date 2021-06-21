@@ -63,7 +63,7 @@ const Page: React.VFC = () => {
                 aria-disabled={
                   staff.disabled || (undefined as unknown as boolean)
                 }
-                tabIndex={!staff.disabled ? -1 : 0}
+                tabIndex={staff.disabled ? -1 : 0}
               >
                 <Avatar
                   size="2xl"
