@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { AspectRatio, Image } from "@chakra-ui/react";
+import Head from "next/head";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { breakpoints } from "~/foundation/theme";
 
@@ -43,47 +44,52 @@ const Page: React.VFC = () => {
     aspectRatio > 1.25 ? "wide" : aspectRatio >= 0.7 ? "normal" : "narrow";
 
   return (
-    <Layout>
-      <AspectRatio ref={ref} mx="auto" minHeight="100%" ratio={aspectRatio}>
-        <>
-          <Image
-            opacity={isImageLoaded ? 1 : 0}
-            transition="opacity 0.5s"
-            src="/assets/img/top.jpg"
-            alt="main visual"
-            objectFit="cover"
-            onLoad={onLoad}
-          />
-          <Image
-            visibility={imageType === "narrow" ? "visible" : "hidden"}
-            opacity={isImageLoaded ? 1 : 0}
-            transition="opacity 0.5s"
-            src="/assets/img/toptext-n.png"
-            alt="main visual text narrow"
-            objectFit="cover"
-            onLoad={onLoad}
-          />
-          <Image
-            visibility={imageType === "normal" ? "visible" : "hidden"}
-            opacity={isImageLoaded ? 1 : 0}
-            transition="opacity 0.5s"
-            src="/assets/img/toptext.png"
-            alt="main visual text"
-            objectFit="cover"
-            onLoad={onLoad}
-          />
-          <Image
-            visibility={imageType === "wide" ? "visible" : "hidden"}
-            opacity={isImageLoaded ? 1 : 0}
-            transition="opacity 0.5s"
-            src="/assets/img/toptext-w.png"
-            alt="main visual text wide"
-            objectFit="cover"
-            onLoad={onLoad}
-          />
-        </>
-      </AspectRatio>
-    </Layout>
+    <>
+      <Head>
+        <link rel="preload" href="/assets/img/top.jpg" as="image" />
+      </Head>
+      <Layout>
+        <AspectRatio ref={ref} mx="auto" minHeight="100%" ratio={aspectRatio}>
+          <>
+            <Image
+              opacity={isImageLoaded ? 1 : 0}
+              transition="opacity 0.5s"
+              src="/assets/img/top.jpg"
+              alt="main visual"
+              objectFit="cover"
+              onLoad={onLoad}
+            />
+            <Image
+              visibility={imageType === "narrow" ? "visible" : "hidden"}
+              opacity={isImageLoaded ? 1 : 0}
+              transition="opacity 0.5s"
+              src="/assets/img/toptext-n.png"
+              alt="main visual text narrow"
+              objectFit="cover"
+              onLoad={onLoad}
+            />
+            <Image
+              visibility={imageType === "normal" ? "visible" : "hidden"}
+              opacity={isImageLoaded ? 1 : 0}
+              transition="opacity 0.5s"
+              src="/assets/img/toptext.png"
+              alt="main visual text"
+              objectFit="cover"
+              onLoad={onLoad}
+            />
+            <Image
+              visibility={imageType === "wide" ? "visible" : "hidden"}
+              opacity={isImageLoaded ? 1 : 0}
+              transition="opacity 0.5s"
+              src="/assets/img/toptext-w.png"
+              alt="main visual text wide"
+              objectFit="cover"
+              onLoad={onLoad}
+            />
+          </>
+        </AspectRatio>
+      </Layout>
+    </>
   );
 };
 
