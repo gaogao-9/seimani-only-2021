@@ -11,6 +11,7 @@
     "static": "next export",
     "generate": "yarn build && yarn static",
     "start": "next start",
+    "deploy": "yarn run generate && npx push-dir --dir=out --branch=gh-pages --overwrite-local",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx . --ignore-path .gitignore",
     "lint:fix": "yarn lint --fix"
   },
