@@ -41,7 +41,14 @@ const Page: React.VFC = () => {
             <br />
             詳細：オンラインイベントのご案内
             <br />
-            &lt;準備中&gt;
+            漕ぎ出せ！ソクバイ海Ⅳ&nbsp;#アイムソウリー2021&nbsp;|&nbsp;pictSQUARE&nbsp;-&nbsp;オンライン即売会サービス
+            <br />
+            <AnchorLink
+              href="
+            https://pictsquare.net/n3ci6v6yun9u383rp814sahs2wucdmwq"
+            >
+              https://pictsquare.net/n3ci6v6yun9u383rp814sahs2wucdmwq
+            </AnchorLink>
           </Card.Section>
           <Card.Section title="イベントスケジュール">
             <Table>
