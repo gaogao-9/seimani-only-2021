@@ -11,8 +11,8 @@ export const Head: React.VFC = (props) => {
   const subTitle = route?.pathname === "/top" ? "" : route?.title ?? "";
   const fullTitle = subTitle ? `${title} | ${subTitle}` : title;
   const description = `${title}の公式サイトです`;
-  const origin = "https://festia.moe/";
-  const ogpImage = `${origin}ogp_icon.jpg`;
+  const origin = "https://festia.moe";
+  const ogpImage = `${origin}/ogp_icon.jpg`;
 
   return (
     <NextHead {...props}>
@@ -31,6 +31,7 @@ export const Head: React.VFC = (props) => {
       <meta property="og:image" content={ogpImage} />
       <meta name="twitter:card" content="summary" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="canonical" href={`${origin}${router.pathname}`} />
     </NextHead>
   );
 };
