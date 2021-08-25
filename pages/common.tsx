@@ -3,6 +3,7 @@ import { Flex, Table, Tbody, Td, Tr } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
+import { CanceledInfoAlert } from "~/components/CanceledInfoAlert";
 
 const Page: React.VFC = () => {
   return (
@@ -14,6 +15,7 @@ const Page: React.VFC = () => {
         align="center"
         justify="center"
       >
+        <CanceledInfoAlert />
         <Card title="参加者全般">
           <Card.Section title="はじめに">
             一般参加を予定される総理の皆さんは、下記の諸注意をお読みいただいた上でご参加ください。

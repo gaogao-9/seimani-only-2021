@@ -13,6 +13,7 @@ import {
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
+import { CanceledInfoAlert } from "~/components/CanceledInfoAlert";
 
 const StyledLink = styled.a`
   &[aria-disabled] {
@@ -38,6 +39,7 @@ const Page: React.VFC = () => {
         align="center"
         justify="center"
       >
+        <CanceledInfoAlert />
         <Card title="サークル参加をする方へ">
           <Card.Section title="はじめに">
             当イベントにて二次創作作品の頒布や展示を希望される総理には、サークル参加の事前申込をお願いしております。

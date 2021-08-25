@@ -12,6 +12,7 @@ import styled from "@emotion/styled";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { Card } from "~/components/Card";
 import { AnchorLink } from "~/components/AnchorLink";
+import { CanceledInfoAlert } from "~/components/CanceledInfoAlert";
 
 const StyledIframe = styled.iframe`
   width: 100%;
@@ -40,6 +41,7 @@ const Page: React.VFC = () => {
         align="center"
         justify="center"
       >
+        <CanceledInfoAlert />
         <Card title="会場情報">
           <Wrap spacing={2} justify="center" align="center">
             <WrapItem

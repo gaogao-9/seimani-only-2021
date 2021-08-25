@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { Text, Button, Checkbox, Flex } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { Card } from "~/components/Card";
+import { CanceledInfoAlert } from "~/components/CanceledInfoAlert";
 
 const StyledLink = styled.a`
   &[aria-disabled] {
@@ -28,6 +29,7 @@ const Page: React.VFC = () => {
         align="center"
         justify="center"
       >
+        <CanceledInfoAlert />
         <Card title="コスプレ参加をする方へ">
           <Card.Section title="感染症対策に関するルール">
             ・混雑を避けるため、更衣室の利用は

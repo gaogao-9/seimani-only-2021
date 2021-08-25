@@ -3,6 +3,7 @@ import { Text, Flex, Table, Tbody, Td, Tr } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
+import { CanceledInfoAlert } from "~/components/CanceledInfoAlert";
 
 const Page: React.VFC = () => {
   return (
@@ -14,6 +15,7 @@ const Page: React.VFC = () => {
         align="center"
         justify="center"
       >
+        <CanceledInfoAlert />
         <Card title="感染症対策ページ">
           <Card.Section title="はじめに">
             本イベントでは、会場の所在地である神奈川県が公表する『感染拡大防止対策』に則り、感染症の拡大防止に努めるものとします。
