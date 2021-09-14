@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex, Table, Tbody, Td, Tr } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { DefaultLayout as Layout } from "~/components/layouts/index";
 import { AnchorLink } from "~/components/AnchorLink";
 import { Card } from "~/components/Card";
