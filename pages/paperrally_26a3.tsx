@@ -82,13 +82,13 @@ const Page: React.VFC = () => {
               セブンイレブン
               <br />
               <Text as="span" fontWeight="500">
-                ********
+                34971034
               </Text>
               <br />
               ファミリーマート、ローソン、ポプラグループ
               <br />
               <Text as="span" fontWeight="500">
-                ********
+                9B4EXBP6EB
               </Text>
             </Card.Section>
             <Card.Section title="推奨用紙サイズ">L判・2L判</Card.Section>
