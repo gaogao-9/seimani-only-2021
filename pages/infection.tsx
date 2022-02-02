@@ -90,7 +90,9 @@ const Page: React.VFC = () => {
             <br />
             その他注意点はコスプレ参加者向けページをご確認ください。
             <br />
-            <AnchorLink to="/cosplay">https://festia.moe/cosplay</AnchorLink>
+            <AnchorLink to="/cosplay">
+              https://only2021.festia.moe/cosplay
+            </AnchorLink>
           </Card.Section>
           <Card.Section title="さいごに">
             これらのお願いは情勢の変化やガイドブックの更新が発生した場合などに随時変更されますので、あらかじめご了承ください。
